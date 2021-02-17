@@ -1,56 +1,57 @@
 #include <stdio.h>
 
 int main()
-
 {
+  //set value and operator
+  int num1, num2;
+  int loop = 1;
+  char oper;
 
-    /*num1&2 are operands / result is total / char operator is choosed by user */
-    int num1, num2, result;
-    int loop;
-    char oper;
-while (loop)
-{
 
-     printf("--- CALCULATOR ---\n");
+  while(loop)
+  {
 
-    // user choose num1
-    printf("Choose first number: ");
+    printf("Enter a value: ");
     scanf("%d", &num1);
 
-    //user choose operator
-    printf("Choose an operator (+, -, *): ");
+    printf("Enter an operator: ");
     scanf(" %c", &oper);
 
-    //user choose num2
-    printf("Choose second number: ");
+    printf("Enter a value: ");
     scanf("%d", &num2);
 
+       switch(oper)
+       {
+         case '+':
+         printf("= %d\n\n", num1 + num2);
+         break;
 
-    //switch case for operator
-    result=0;
-    switch(oper)
-    {
-       case '+':
-        result=num1+num2;
-        break;
+         case '-':
+         printf("= %d\n\n", num1 - num2);
+         break;
+
+         case '*':
+         printf("= %d\n\n", num1 * num2);
+         break;
+
+         case '/':
+         printf("= %d\n\n", num1 / num2);
+         break;
+        }
+
+            char userinput;
+
+            printf("Y/N Would you like to continue ?\n\n");
+            scanf(" %c", &userinput);
+
+            if (userinput == 'y')
+            {
+                loop = 1;
+            }
+
+   }
 
 
-      case '-':
-        result=num1-num2;
-        break;
 
-
-      case '*':
-        result=num1*num2;
-        break;
-
-      default:
-        printf("ERROR\n");
-        break;
-    }
-
-    printf("= %d\n", result);
-}
-    system("PAUSE");
-    return 0;
+  return 0;
 }
