@@ -8,6 +8,8 @@ int main()
   int start;          // press to start
   int rnum = 5;       // num to guess
   int usernum = 0;    // users guess
+  int counter = 0;
+  int choice;
         
 
 
@@ -32,30 +34,36 @@ int main()
         if (usernum < rnum) //users input too low
         {
           printf("More\n\n");  
+          counter++;
         }
         else if(usernum > rnum) //users input too high
         {
           printf("Less\n\n");
+          counter++;
         }
         else   //Correct answer, ask for continue or exit
         {
 
-          int choice;
-          printf("Correct\n\n"); 
-          printf("1.Continue\n2.exit\n\n"),
+          counter++;
+          printf("Correct, after %d attempts.\n\n", counter);
+          
+
+          printf("1.Continue\n2.exit\n\n");
           scanf("%d", &choice);
           system("cls");
-          if(choice == 1)
-          {
-            usernum = 0;
-            rnum = 5;
-            start = 1;
+          
+            if(choice == 1)
+            {
+             usernum = 0;
+             counter = 0;
+             rnum = 5;
+             start = 1;
             
-          }
-          if (choice == 2)
-          {
-            exit(0);
-          }
+            }
+            if (choice == 2)
+            {
+              exit(0);
+            }
           
         }
         

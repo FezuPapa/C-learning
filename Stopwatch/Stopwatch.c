@@ -21,6 +21,7 @@ int main()
 
         while (1) //The stopwatch infinite loop
         {
+            
             if (s==60)  //if seconds > 59, minute gain one and second reset to 0
             {
                 m=m+1;
