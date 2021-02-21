@@ -52,20 +52,20 @@ int main()
           scanf("%d", &choice);
           system("cls"); //cleanboard
           
-            if(choice == 1) //User press 1 : continue, everything reset
-            {
-             usernum = 0;
-             counter = 0;
-             rnum = 5;
-             start = 1;
+          if(choice == 1) //User press 1 : continue, everything reset
+          {
+            usernum = 0;
+            counter = 0;
+            rnum = 5;
+            start = 1;
             
-            }
-            if (choice == 2) //exit the game
-            {
-              exit(0);
-            }
+          }
+          if (choice == 2) //exit the game
+          {
+            exit(0);
+          }
           
-        }
+         }
         
        }
 
