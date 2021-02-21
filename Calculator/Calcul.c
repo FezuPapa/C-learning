@@ -40,8 +40,9 @@ int main()
          break;
         }
 
+            
             char userinput;;
-            scanf("%c", &userinput);
+            
 
             printf("Y/N Would you like to continue ?\n\n");
             scanf("%c", &userinput);
