@@ -14,7 +14,7 @@ int main()
   printf("1. Start the game\n");  //game start or exit
   printf("2. Exit\n\n");
   scanf(" %d", &start);   //users input start or exit
-
+  system("cls");
 
 
   switch(start)                      
@@ -37,10 +37,26 @@ int main()
         {
           printf("Less\n\n");
         }
-        else   //Correct answer, system will pause
+        else   //Correct answer, ask for continue or exit
         {
+
+          int choice;
           printf("Correct\n\n"); 
-          system("PAUSE");
+          printf("1.Continue\n2.exit\n\n"),
+          scanf("%d", &choice);
+          system("cls");
+          if(choice == 1)
+          {
+            usernum = 0;
+            rnum = 5;
+            start = 1;
+            
+          }
+          if (choice == 2)
+          {
+            exit(0);
+          }
+          
         }
         
        }
