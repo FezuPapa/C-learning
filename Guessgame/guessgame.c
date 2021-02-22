@@ -1,16 +1,15 @@
-
+ #include<time.h>
+ #include<stdlib.h>
  #include<stdio.h>
- #include <stdlib.h>
 
-
-int main()
+ int main()
 {
-  int start;          // press to start
-  int rnum = 5;       // num to guess
+  int start, choice;          // press to start
   int usernum = 0;    // users guess
   int counter = 0;    //number of attempts
-  int choice;         //users choice exit/continue
-        
+  int rnum = rand()%10;
+
+  
 
 
   printf("1. Start the game\n");  //game start or exit
