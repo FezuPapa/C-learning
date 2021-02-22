@@ -54,7 +54,6 @@
           {
             usernum = 0;
             counter = 0;
-            rnum = 5;
             start = 1;
             rnum = rand()%10;
             
