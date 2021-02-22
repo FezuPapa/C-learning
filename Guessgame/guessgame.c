@@ -1,4 +1,3 @@
- #include<time.h>
  #include<stdlib.h>
  #include<stdio.h>
 
@@ -57,6 +56,7 @@
             counter = 0;
             rnum = 5;
             start = 1;
+            rnum = rand()%10;
             
           }
           if (choice == 2) //exit the game
