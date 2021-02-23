@@ -1,8 +1,10 @@
  #include<stdlib.h>
  #include<stdio.h>
 
- int main()
+  int main( int arg, char** argv )
 {
+  srand(time(NULL));
+
   int start, choice;          // press to start
   int usernum = 0;    // users guess
   int counter = 0;    //number of attempts
@@ -55,6 +57,7 @@
             usernum = 0;
             counter = 0;
             start = 1;
+            
             rnum = rand()%10;
             
           }
@@ -68,8 +71,7 @@
        }
 
     case 2:   //user typed 2, exit
-    printf("Exit\n\n");
-    system("PAUSE");
+    exit(0);
     
   }
  
