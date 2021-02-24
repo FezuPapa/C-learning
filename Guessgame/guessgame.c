@@ -1,7 +1,7 @@
  #include<stdlib.h>
  #include<stdio.h>
 
-  int main( int arg, char** argv )
+  int main( int arg)
 {
   srand(time(NULL));
 
