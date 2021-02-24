@@ -4,10 +4,20 @@
 
 int main ()
 {
-    char text;
+    char utext [15];
     
-    printf("Write: Hello world\n");
-    scanf("%s[^\n]", &text);
-    printf("%s[^\n]", text);
-    system("PAUSE");
+    
+    printf("type : Hello\n");
+    fgets(utext, 15, stdin);
+        
+        if (strcmp(utext, "Hello") == 1)
+        printf("Nice\n");
+
+        else
+        printf("Wrong\n");
+    
+
+
+
+system("PAUSE");
 }
